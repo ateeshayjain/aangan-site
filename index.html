@@ -88,7 +88,7 @@
 <tr><td>Payment record (Razorpay link id, amount, status)</td><td>Backend</td><td>Kept for accounting/refunds. Card/UPI details go to <strong>Razorpay</strong> directly — Kunba never sees them.</td></tr>
 </tbody></table>
 <p><strong>Processors:</strong> the verification partner (identity/court/bank checks; named in the consent screen) and <strong>Razorpay</strong> (payments). Keys and raw records stay server-side; webhooks are signature-verified; reports are served only through short-lived signed links to the requesting account (Sign in with Apple).</p>
-<p><strong>The staff member&#x27;s rights:</strong> consent is recorded in Hindi and English, addressed to them, and can be refused. They (or you on their behalf) can ask for the backend rows and report to be deleted at <strong>Ateeshay.jain@gmail.com</strong>; we honour deletion of everything except records we must keep by law.</p>
+<p><strong>The staff member&#x27;s rights:</strong> consent is recorded in Hindi and English, addressed to them, and can be refused. They (or you on their behalf) can ask for the backend rows and report to be deleted — <strong>in the app</strong> (Verification → &quot;Delete verification data&quot; for one, or Settings → &quot;Delete all verification data&quot; to erase everything plus the sign-in account), or by email at <strong>Ateeshay.jain@gmail.com</strong>. We honour deletion of everything except records we must keep by law. A verification whose checks are currently running can be deleted once they finish.</p>
 <p><strong>Refunds:</strong> if a paid request cannot be run (e.g. details lapsed before submission), it is flagged for refund rather than silently dropped.</p>
 <h2>7. Optional cloud AI assistance (off by default)</h2>
 <p>Aangan includes an <strong>optional</strong> feature to help parse a diet chart using a cloud AI service. It is <strong>disabled by default and not configured out of the box</strong>:</p>
@@ -121,7 +121,8 @@
 <li>Your data persists on your device until <strong>you</strong> delete it (delete records in the app, or delete the app to remove its local store).</li>
 <li>If you used iCloud sync, removing data and/or signing out of iCloud removes the synced copy from your iCloud per Apple&#x27;s process.</li>
 <li>Shared-home participants you remove lose access going forward.</li>
-<li><strong>Verification data:</strong> transient identifiers are deleted at submission (or within 24 h if unpaid); the report and consent record persist until you delete the verification in-app or request deletion (§6).</li>
+<li><strong>Verification data:</strong> transient identifiers are deleted at submission (or within 24 h if unpaid); the report and consent record persist until you delete the verification (in-app, per verification or all at once — §6) or request deletion.</li>
+<li><strong>Export:</strong> Settings → &quot;Export household data&quot; gives you a portable copy of a home&#x27;s data (spreadsheets + JSON) at any time — your right to data portability, self-served.</li>
 </ul>
 <h2>12. Your rights</h2>
 <p>Because the data lives on your device under your control, you can <strong>access, correct, export (e.g. share as PDF), and delete</strong> it directly in the app at any time. For questions about these rights, contact <strong>Ateeshay.jain@gmail.com</strong>. We aim to honour applicable rights under India&#x27;s <strong>Digital Personal Data Protection Act, 2023</strong> and comparable laws; in practice, you exercise most of them yourself within the app.</p>
